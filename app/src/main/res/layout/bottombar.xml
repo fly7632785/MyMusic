@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_below="@+id/bottom_img_shadow" >
+
+    <ImageView
+        android:id="@+id/bottom_img_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/img_noplaying"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/bottom_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/bottom_btn_mode"
+        android:layout_toRightOf="@+id/bottom_img_image"
+        android:ellipsize="marquee"
+        android:layout_marginLeft="3dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/bottom_tv_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_alignLeft="@+id/bottom_tv_title"
+        android:layout_below="@+id/bottom_tv_title"
+        android:layout_marginTop="2dp"
+        android:textColor="#808080"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:id="@+id/bottom_btn_mode"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/bottom_btn_previous"
+        android:src="@drawable/bt_playing_mode_order"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/bottom_btn_next"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/selector_btn_next" />
+
+    <Button
+        android:id="@+id/bottom_btn_play"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/bottom_btn_next"
+        android:background="@drawable/selector_btn_play" />
+
+    <Button
+        android:id="@+id/bottom_btn_previous"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/bottom_btn_play"
+        android:background="@drawable/selector_btn_prev" />
+
+</RelativeLayout>

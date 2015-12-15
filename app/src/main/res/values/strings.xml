@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyMusic</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_scan">san musics</string>
+</resources>
